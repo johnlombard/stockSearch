@@ -3,6 +3,10 @@ import SearchBar from './SearchBar';
 import API from './utils/API';
 import Card from './Card'
 
+// If 404 is returned display Please enter valid ticker
+// loader
+// colors of green and red negative
+// css
 
 class App extends React.Component {
   state = {
