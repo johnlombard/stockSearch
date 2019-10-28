@@ -1,24 +1,24 @@
 import React from 'react';
+import './SearchBar.scss'
 
 
 const SearchBar = props => {
     return (
-        <div className="ui segment">
-            <form className="ui form">
-                <label>Image Search</label>
-                <input 
+        <div className="searchBar">
+            <form className="">
+                <label className="searchBar__label">Stock Ticker Search</label>
+                <input
                     onChange={props.handleInputChange}
                     value={props.value}
-                    className="field" 
-                    type="text" 
+                    className=""
+                    type="text"
                     maxLength="4"
                 />
-           
-            <button onClick={props.handleFormSubmit} className="btn btn-primary">
-          Search
-        </button>
-        </form>
-        </div> 
+                <button onClick={props.handleFormSubmit} className="searchBar__button">
+                    Search
+                </button>
+            </form>
+        </div>
     );
 }
 

@@ -19,16 +19,13 @@ const Card = ({ stockInfo, err }) => {
         percentChange = 'green'
     } else if (change < 0) {
         percentChange = 'red'
-    } else if (!err === null) {
-        percentChange = null
-    }
+    }  
 
     return (
 
-        <div style={{ backgroundColor: percentChange }} className="">
-            {console.log(err)}
+        <div className="">
             {err === null &&
-                <div>
+                <div style={{ backgroundColor: percentChange }}>
                     <h1>Company Name: {companyName}</h1>
                     <h3>Symbol: {symbol}</h3>
                     <h3>Primary Exchange: {primaryExchange}</h3>

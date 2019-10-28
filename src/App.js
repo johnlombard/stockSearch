@@ -2,15 +2,7 @@ import React from 'react';
 import SearchBar from './SearchBar';
 import API from './utils/API';
 import Card from './Card'
-
-// If 404 is returned display Please enter valid ticker
-// Clear state
-// Show please enter valid ticker
-
-
-// loader
-// colors of green and red negative
-// css
+import './App.scss'
 
 class App extends React.Component {
   state = {
@@ -40,7 +32,7 @@ class App extends React.Component {
     
     render() {
         return (
-            <div className="ui container" style={{ marginTop: '10px' }}>
+            <div className="app" style={{ marginTop: '10px' }}>
                 <SearchBar 
                   onSubmit={this.searchStock} 
                   value={this.state.search}
